@@ -74,31 +74,57 @@ body {
 
 /* ホームセクション */
 #home {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: #f8fafb;
+    color: #2c3e50;
     text-align: center;
-    padding: 120px 0 80px;
+    padding: 140px 0 100px;
     scroll-margin-top: 0;
+    border-bottom: 1px solid #e1e8ed;
 }
 
 .hero {
-    margin-bottom: 80px;
+    margin-bottom: 100px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
 }
 
 .main-title {
-    font-size: clamp(2rem, 4vw, 3.5rem);
-    font-weight: 700;
-    margin-bottom: 20px;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 300;
+    margin-bottom: 30px;
     line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #1a202c;
 }
 
 .subtitle {
-    font-size: clamp(1rem, 2vw, 1.3rem);
-    opacity: 0.9;
+    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+    font-weight: 500;
+    color: #4a5568;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+}
+
+.introduction {
     max-width: 800px;
     margin: 0 auto;
-    white-space: nowrap;
-    word-break: keep-all;
+    padding: 30px 0;
+    border-top: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.introduction p {
+    font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+    line-height: 1.8;
+    color: #64748b;
+    margin: 0;
+    font-weight: 400;
+    text-align: left;
+    padding: 0 20px;
 }
 
 .example-cards {
@@ -110,16 +136,17 @@ body {
 }
 
 .preview-card {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    color: white;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    background: white;
+    border: 1px solid #e2e8f0;
+    color: #2d3748;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .preview-card:hover {
-    transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-color: #cbd5e0;
 }
 
 /* カード共通スタイル */
@@ -150,10 +177,22 @@ body {
 .examples-label {
     text-align: center;
     font-size: clamp(1.5rem, 3vw, 2rem);
-    font-weight: 600;
-    color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 30px;
-    letter-spacing: 2px;
+    font-weight: 300;
+    color: #718096;
+    margin-bottom: 40px;
+    letter-spacing: 3px;
+    position: relative;
+}
+
+.examples-label::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 1px;
+    background-color: #cbd5e0;
 }
 
 /* イントロセクション */
