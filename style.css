@@ -77,17 +77,18 @@ body {
     background: #f8fafb;
     color: #2c3e50;
     text-align: center;
-    padding: 140px 0 100px;
+    padding: 180px 0 120px;
     scroll-margin-top: 0;
     border-bottom: 1px solid #e1e8ed;
+    min-height: 100vh;
 }
 
 .hero {
-    margin-bottom: 100px;
+    margin-bottom: 120px;
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 20px;
+    padding: 40px 20px 0;
 }
 
 .main-title {
@@ -171,7 +172,8 @@ body {
 
 /* 例示セクション */
 .examples-section {
-    margin-top: 60px;
+    margin-top: 80px;
+    padding-bottom: 40px;
 }
 
 .examples-label {
@@ -722,8 +724,9 @@ body {
     }
     
     #home {
-        padding: 100px 0 60px;
+        padding: 140px 0 80px;
         scroll-margin-top: 0;
+        min-height: 100vh;
     }
     
     #intro {
